@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="form.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <div>
+    <form action="home.php" name="registration">
+
+      <label for="firstname">First Name</label><br>
+      <input type="text" name="firstname" id="firstname"><br>
+      <p id="firstcheck" style="color: red;" >
+        Firstname is missing.
+  </p>
+  
+      <label for="lastname">Last Name</label><br>
+      <input type="text" name="lastname" id="lastname" ><br>
+      <p id="lastcheck" style="color: red;" >
+        lastname is missing.
+  </p>
+  
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" ><br>
+      <p id="emailcheck" style="color: red;" >
+        email is misssing.
+  </p>
+  
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="password" ><br>
+      <p id="passcheck" style="color: red;" >
+        Password  is Must.
+  </p>
+  
+      <label for="password"> Confirm Password</label><br>
+      <input type="password" name="cpassword" id="conpassword"  ><br>
+      <p id="conpasscheck" style="color: red;" >
+        Password  didn't match.
+  </p>
+  
+      <button type="submit" id="submitbtn">Submit</button>
+    </form>
+
+  </div>
+  
+
+<script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+<script src="form.js"></script>
+  
+</body>
+</html>
